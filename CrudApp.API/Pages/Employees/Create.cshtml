@@ -1,0 +1,58 @@
+﻿@page
+@using CrudApp.API.Pages.Employees
+@model CreateModel
+
+<form method="post" class="card p-4 shadow-sm mt-3 mx-auto" style="max-width:400px">
+    <h3 class="mb-3">Nuevo Empleado</h3>
+
+    <div class="mb-3">
+        <label asp-for="Employee.Name" 
+            class="form-label"></label>
+
+        <input asp-for="Employee.Name" 
+            class="form-control" />
+
+        <span asp-validation-for="Employee.Name" 
+            class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Employee.Surname" 
+            class="form-label"></label>
+
+        <input asp-for="Employee.Surname" 
+            class="form-control" />
+
+        <span asp-validation-for="Employee.Surname" 
+            class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Employee.BirthDate" 
+            class="form-label"></label>
+
+        <input asp-for="Employee.BirthDate" 
+            type="date" 
+            class="form-control" />
+
+        <span asp-validation-for="Employee.BirthDate" 
+            class="text-danger"></span>
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <button type="submit" 
+                class="btn btn-primary w-25">Guardar</button>
+
+        <a asp-page="./EmployeeList" 
+            class="btn btn-secondary ms-2 w-25">Cancelar</a>
+    </div>
+
+
+</form>
+
+<div class="d-flex justify-content-center">
+    @if (Model.ErrorMessage != null)
+    {
+        <div class="alert alert-danger mt-2" style="width: 400px;">@Model.ErrorMessage</div>
+    }
+</div>

@@ -1,0 +1,59 @@
+## Build results
+bin/
+obj/
+out/
+
+## Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## ASP.NET Core
+wwwroot/dist/
+wwwroot/node_modules/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Others
+*.log
+*.tlog
+*.pdb
+*.cache
+*.dbmdl
+*.bak
+*.tmp
+
+# Rider
+.idea/
+
+# DotCover
+*.dcvr
+
+## Entity Framework Migrations snapshot
+Migrations/
+
+## SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+## Npm
+node_modules/
+npm-debug.log*
+
+## Others
+TestResults/
+publish/
+*.nupkg
+
+# Git Ignore MacOS and Linux metadata
+.DS_Store
+*.swp
